@@ -32,7 +32,6 @@ ARG REBUILD=1
 RUN set -ex \
     && mkdir /uploads \
     && export DEBIAN_FRONTEND=noninteractive \
-    && apt-get clean \
     && apt-get update -y \
     && apt-get upgrade -y \
     && apt-get install -y \
